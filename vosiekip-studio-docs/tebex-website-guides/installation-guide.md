@@ -38,9 +38,27 @@ Never share your **Private key** with anyone. It gives full access to your Tebex
 {% endstep %}
 
 {% step %}
-### Check your hosting
+### Choosing your hosting
 
-The website needs a host that can run **Node.js** apps. A normal "PHP only" webhost (the kind used for WordPress) cannot run it.
+Your website needs **hosting**: a computer on the internet that keeps your store online 24/7. The website runs on **Node.js**, so your hosting must support Node.js. Both kinds of hosting below work.
+
+| | Web hosting with a control panel | VPS (your own server) |
+| --- | --- | --- |
+| **What it is** | You share a server and manage everything through a website with buttons, such as **cPanel**. | You rent a whole server and control it by typing commands. |
+| **Best for** | Beginners | People who are comfortable with a terminal |
+| **Examples** | [Verpex](https://verpex.com/), or any host with cPanel, Plesk, DirectAdmin or Webuzo and Node.js support | [Hetzner](https://www.hetzner.com/cloud), [DigitalOcean](https://www.digitalocean.com/), [OVHcloud](https://www.ovhcloud.com/), [Verpex VPS](https://verpex.com/) |
+| **Setup** | Mostly clicking, no commands needed | Copy and paste commands |
+| **Guide** | [Hosting panel install](hosting-panel-install.md) | [VPS install](vps-install.md) |
+
+{% hint style="success" %}
+**Our recommendation: Verpex web hosting**
+
+New to hosting? We recommend [Verpex](https://verpex.com/) web hosting. It comes with **cPanel**, **Node.js support**, databases and free SSL, it is very cheap, and our [Hosting panel install](hosting-panel-install.md) guide follows it step by step. The cheapest plan is enough for one store.
+{% endhint %}
+
+<details>
+
+<summary>Already have hosting? Check these requirements</summary>
 
 Your hosting must have:
 
@@ -49,26 +67,28 @@ Your hosting must have:
 * **Outbound HTTPS**, so the website can reach Tebex.
 * **File Manager** or **SFTP**, so you can upload files.
 
-{% hint style="info" %}
-Not sure if your host has this? Send the list above to your hosting provider's support and ask if your plan supports it.
+On a control panel, look for a **Node.js** page (in cPanel: **Software → Setup Node.js App**). If your panel doesn't have one, the website can't run there.
+
+{% hint style="warning" %}
+A "PHP only" webhost, the kind that only runs WordPress, cannot run the website. Not sure? Send the list above to your hosting provider's support and ask if your plan supports it.
 {% endhint %}
+
+</details>
 {% endstep %}
 
 {% step %}
 ### Pick your installation method
 
-Choose the guide that matches your hosting.
+Choose the guide that matches the hosting you picked.
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Hosting panel install</strong></td><td>For shared or managed hosting with a control panel such as cPanel, Plesk, DirectAdmin or Webuzo. No commands needed for most steps.</td><td><a href="hosting-panel-install.md">hosting-panel-install.md</a></td></tr><tr><td><strong>VPS install</strong></td><td>For your own Ubuntu 22.04 or 24.04 server with root access. You will copy and paste a few commands.</td><td><a href="vps-install.md">vps-install.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Hosting panel install</strong> (recommended)</td><td>For web hosting with a control panel, such as Verpex with cPanel. No commands needed for most steps.</td><td><a href="hosting-panel-install.md">hosting-panel-install.md</a></td></tr><tr><td><strong>VPS install</strong></td><td>For your own Ubuntu 22.04 or 24.04 server with root access. You will copy and paste a few commands.</td><td><a href="vps-install.md">vps-install.md</a></td></tr></tbody></table>
 
 <details>
 
-<summary>Which one should I pick?</summary>
+<summary>Not sure which kind of hosting you have?</summary>
 
 * **You log in to a website with buttons and icons** (cPanel, Plesk, DirectAdmin, Webuzo) to manage your hosting → [Hosting panel install](hosting-panel-install.md).
 * **You received an IP address and a root password** for a server → [VPS install](vps-install.md).
-
-Other panels work too, as long as they have a **Node.js app manager** (a page where you can create a Node.js application).
 
 </details>
 {% endstep %}
