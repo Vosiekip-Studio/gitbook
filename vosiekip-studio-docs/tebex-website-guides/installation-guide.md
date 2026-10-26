@@ -100,6 +100,7 @@ Once your website is running, continue with these pages:
 
 * [Add-ons](add-ons.md): install and set up extra pages such as the Rank Table, Vote Page and Gift Cards.
 * [Updating](updating.md): install a new release without losing your settings.
+* [Giving us access](giving-us-access.md): let our team help you safely with the installation.
 
 After that, you can set up your webstore in Tebex the way you normally would for a Tebex theme.
 {% endstep %}

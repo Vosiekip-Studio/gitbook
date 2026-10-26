@@ -23,3 +23,4 @@
 * [Connecting with SFTP](tebex-website-guides/connecting-with-sftp.md)
 * [Add-ons](tebex-website-guides/add-ons.md)
 * [Updating](tebex-website-guides/updating.md)
+* [Giving us access](tebex-website-guides/giving-us-access.md)
