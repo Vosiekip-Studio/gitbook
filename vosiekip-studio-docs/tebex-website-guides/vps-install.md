@@ -39,7 +39,7 @@ You need two kinds of programs on your own computer:
 {% step %}
 ### Pointing your domain to the server
 
-Your domain needs to know where your server is.
+Your domain needs to know where your server is. New to this? [Setting up your domain →](setting-up-your-domain.md) shows every click at Namecheap.
 
 1. Open your domain's **DNS settings** at your domain provider.
 2. Add an **A record**:
