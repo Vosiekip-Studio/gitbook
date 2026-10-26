@@ -42,7 +42,7 @@ Never share your **Private key** with anyone. It gives full access to your Tebex
 
 Your website needs **hosting**: a computer on the internet that keeps your store online 24/7. The website runs on **Node.js**, so your hosting must support Node.js. Both kinds of hosting below work.
 
-| | Web hosting with a control panel | VPS (your own server) |
+| Hosting | Web hosting <mark style="color:$success;">**(Recommended)**</mark> | VPS |
 | --- | --- | --- |
 | **What it is** | You share a server and manage everything through a website with buttons, such as **cPanel**. | You rent a whole server and control it by typing commands. |
 | **Best for** | Beginners | People who are comfortable with a terminal |
