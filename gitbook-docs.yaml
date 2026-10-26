@@ -1,0 +1,11 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: Vosiekip Studio Docs
+  structure:
+    - type: space
+      key: space-1
+      title: Vosiekip Studio Docs
+      path: vosiekip-studio-docs
+      default: true
+      content:
+        directory: ./vosiekip-studio-docs
