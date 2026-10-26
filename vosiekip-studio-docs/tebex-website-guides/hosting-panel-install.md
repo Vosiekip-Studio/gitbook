@@ -36,7 +36,7 @@ First we upload the website files to your hosting account.
 
 You should now have a folder <kbd>/home/USER/tebex-store</kbd> with the folders `dist`, `theme`, `views`, `public` and the file `package.json` inside.
 
-<!-- Screenshot: File Manager showing the extracted tebex-store folder -->
+<figure><img src="../.gitbook/assets/website-panel-file-manager.png" alt=""><figcaption><p>Your home folder in File Manager. In this example the folder has a different name, yours is called <code>tebex-store</code>.</p></figcaption></figure>
 
 {% hint style="danger" %}
 **Do not put this folder in `public_html`.** The website stores your database password, Tebex private key and encryption key in a `.env` file in this folder. Inside `public_html`, anyone could download that file.
@@ -56,7 +56,11 @@ Many hosting panels scan uploads, and their scanner wrongly rejects any zip file
 
 Now we tell your panel to run the website.
 
-Open the **Node.js** page in your panel. In cPanel this is <mark style="color:$primary;">**Software → Setup Node.js App**</mark>. Press <mark style="color:$primary;">**Create Application**</mark> and fill in:
+Open the **Node.js** page in your panel. In cPanel this is <mark style="color:$primary;">**Software → Setup Node.js App**</mark>.
+
+<figure><img src="../.gitbook/assets/website-panel-software-nodejs.png" alt=""><figcaption></figcaption></figure>
+
+Press <mark style="color:$primary;">**Create Application**</mark> and fill in:
 
 | Setting                      | Value                                         |
 | ---------------------------- | --------------------------------------------- |
@@ -66,15 +70,17 @@ Open the **Node.js** page in your panel. In cPanel this is <mark style="color:$p
 | Application URL              | `store.example.com`, leave the path **empty** |
 | Application startup file     | `dist/server.js`                              |
 
+<figure><img src="../.gitbook/assets/website-panel-create-app.png" alt=""><figcaption><p>Example of a filled in form. Your Application root is <code>tebex-store</code>.</p></figcaption></figure>
+
 Then add one **environment variable**:
 
 | Name       | Value        |
 | ---------- | ------------ |
 | `NODE_ENV` | `production` |
 
-Press <mark style="color:$primary;">**Create**</mark>. Leave the port alone, the panel takes care of it.
+<figure><img src="../.gitbook/assets/website-panel-env-variable.png" alt=""><figcaption><p>Press <strong>Add variable</strong>, fill in the name and value, then press <strong>Done</strong>.</p></figcaption></figure>
 
-<!-- Screenshot: cPanel Setup Node.js App form filled in -->
+Press <mark style="color:$primary;">**Create**</mark>. Leave the port alone, the panel takes care of it.
 
 {% hint style="warning" %}
 The website must run on the root of a domain or subdomain. It will not work in a subfolder such as `store.example.com/shop`.
@@ -89,8 +95,13 @@ The website needs some extra packages before it can start.
 {% tabs %}
 {% tab title="With the button" %}
 1. On the app's page, press <mark style="color:$primary;">**Run NPM Install**</mark>.
+
+<figure><img src="../.gitbook/assets/website-panel-npm-install.png" alt=""><figcaption></figcaption></figure>
+
 2. Wait until it finishes.
-3. Press <mark style="color:$primary;">**Restart**</mark>.
+3. Press <mark style="color:$primary;">**Restart**</mark> at the top of the app's page.
+
+<figure><img src="../.gitbook/assets/website-panel-restart.png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Without the button" %}
