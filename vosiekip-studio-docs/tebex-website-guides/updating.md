@@ -72,7 +72,7 @@ The `.env` file holds your database password and Tebex keys. Keep it private.
 {% step %}
 ### Uploading the new release
 
-Upload the new <kbd>&lt;theme&gt;-store.zip</kbd> to <kbd>/var/www/</kbd> with your SFTP client.
+Upload the new <kbd>&lt;theme&gt;-store.zip</kbd> to <kbd>/var/www/</kbd> with FileZilla ([how to connect with SFTP](connecting-with-sftp.md)).
 {% endstep %}
 
 {% step %}

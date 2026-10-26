@@ -40,7 +40,7 @@ Unlike the website itself, the add-on zips contain no JavaScript, so the panel's
 {% endtab %}
 
 {% tab title="VPS" %}
-1. Upload the add-on zip to <kbd>/var/www/</kbd> with your SFTP client.
+1. Upload the add-on zip to <kbd>/var/www/</kbd> with FileZilla ([how to connect with SFTP](connecting-with-sftp.md)).
 2. Run these commands. For other add-ons, also change `faq-and-rules` to the add-on you are installing.
 
 {% hint style="warning" %}

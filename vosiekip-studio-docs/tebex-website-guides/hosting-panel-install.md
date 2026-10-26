@@ -28,7 +28,7 @@ The files you download start with the name of your theme. On this page we write 
 
 First we upload the website files to your hosting account.
 
-1. Open **File Manager** in your panel (or connect with SFTP).
+1. Open **File Manager** in your panel (or [connect with SFTP](connecting-with-sftp.md)).
 2. Go to your home folder <kbd>/home/USER</kbd>.
 3. Upload <kbd>&lt;theme&gt;-store.tar.gz</kbd> there.
 4. Right-click the file, press <mark style="color:$primary;">**Extract**</mark>, and extract it to <kbd>/home/USER/tebex-store</kbd>.

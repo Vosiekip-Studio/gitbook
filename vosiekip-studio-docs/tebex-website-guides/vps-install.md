@@ -27,7 +27,7 @@ The files you download start with the name of your theme. On this page we write 
 You need two kinds of programs on your own computer:
 
 * **An SSH client** to type commands on your server. On Windows 10/11 and macOS you can use the built-in **Terminal**, or a program such as [PuTTY](https://www.putty.org/).
-* **An SFTP client** to upload files to your server, such as [FileZilla](https://filezilla-project.org/) or [WinSCP](https://winscp.net/).
+* **FileZilla** to upload files to your server. See [Connecting with SFTP](connecting-with-sftp.md) for how to install and use it.
 
 **Copying and pasting commands:** copy a command from this page, paste it in your terminal and press **Enter**. In most terminals you paste with <mark style="color:$primary;">**Ctrl + Shift + V**</mark> or a right-click. Wait for each command to finish before running the next one.
 
@@ -112,7 +112,7 @@ This creates a database called `store` and a user called `store` with your passw
 {% step %}
 ### Uploading the website files
 
-1. Open your SFTP client and connect to `YOUR_SERVER_IP` as `root` (port `22`).
+1. Open FileZilla and connect to `YOUR_SERVER_IP` as `root` (port `22`). New to FileZilla? Follow [Connecting with SFTP](connecting-with-sftp.md).
 2. Upload <kbd>&lt;theme&gt;-store.zip</kbd> to the folder <kbd>/var/www/</kbd>.
 
 <!-- Screenshot: FileZilla with the store zip in /var/www -->
