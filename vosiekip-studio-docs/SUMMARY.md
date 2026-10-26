@@ -20,5 +20,6 @@
 * [Installation guide](tebex-website-guides/installation-guide.md)
   * [Hosting panel install](tebex-website-guides/hosting-panel-install.md)
   * [VPS install](tebex-website-guides/vps-install.md)
+* [Connecting with SFTP](tebex-website-guides/connecting-with-sftp.md)
 * [Add-ons](tebex-website-guides/add-ons.md)
 * [Updating](tebex-website-guides/updating.md)
