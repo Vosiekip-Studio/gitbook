@@ -62,9 +62,15 @@ Your server's IP address is in the welcome email from your VPS provider, and in 
 {% step %}
 ### Adding the A record
 
-1. Log in to Namecheap and open <mark style="color:$primary;">**Domain List**</mark> in the menu on the left.
+1. Log in to Namecheap. Your domains are listed on the dashboard, or under <mark style="color:$primary;">**Domain List**</mark> in the menu on the left.
 2. Press <mark style="color:$primary;">**Manage**</mark> next to your domain.
+
+<figure><img src="../.gitbook/assets/namecheap-domain-list.png" alt=""><figcaption></figcaption></figure>
+
 3. Open the <mark style="color:$primary;">**Advanced DNS**</mark> tab.
+
+<figure><img src="../.gitbook/assets/namecheap-advanced-dns-tab.png" alt=""><figcaption></figcaption></figure>
+
 4. Under **Host Records**, press <mark style="color:$primary;">**Add New Record**</mark> and choose **A Record**.
 5. Fill in:
 
@@ -76,7 +82,7 @@ Your server's IP address is in the welcome email from your VPS provider, and in 
 
 6. Press the green ✔ to save.
 
-<!-- Screenshot: Namecheap Advanced DNS with the A record filled in -->
+<figure><img src="../.gitbook/assets/namecheap-a-record.png" alt=""><figcaption><p>Example for <code>store.mynetwork.com</code>: Host <code>store</code>, Value your IP address, TTL <code>Automatic</code>.</p></figcaption></figure>
 
 <details>
 
