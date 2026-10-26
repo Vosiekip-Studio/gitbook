@@ -25,7 +25,7 @@ No terminal needed.
 ### Backing up the database
 
 1. Open **phpMyAdmin** in your panel.
-2. Click your database (e.g. `USER_accent`) on the left.
+2. Click your database (e.g. `USER_store`) on the left.
 3. Press <mark style="color:$primary;">**Export**</mark>, then <mark style="color:$primary;">**Go**</mark>. Keep the downloaded file safe.
 {% endstep %}
 
@@ -34,9 +34,9 @@ No terminal needed.
 
 1. In **File Manager**, turn on <mark style="color:$primary;">**Show hidden files**</mark> (in cPanel under **Settings**, top right).
 2. Download these to your computer:
-   * the file <kbd>accent-store/.env</kbd>
-   * the folder <kbd>accent-store/storage</kbd>
-   * the folder <kbd>accent-store/theme/extras</kbd> (if you use add-ons)
+   * the file <kbd>tebex-store/.env</kbd>
+   * the folder <kbd>tebex-store/storage</kbd>
+   * the folder <kbd>tebex-store/theme/extras</kbd> (if you use add-ons)
 
 {% hint style="warning" %}
 The `.env` file holds your database password and Tebex keys. Keep it private.
@@ -47,12 +47,12 @@ The `.env` file holds your database password and Tebex keys. Keep it private.
 ### Replacing the files
 
 1. Press <mark style="color:$primary;">**Stop**</mark> on the Node.js app page.
-2. In **File Manager**, rename `accent-store` to `accent-store-old`.
-3. Upload and extract the new <kbd>accent-store.tar.gz</kbd> into a fresh `accent-store` folder, the same way as in [Uploading the files](hosting-panel-install.md).
-4. Copy from `accent-store-old` into the new `accent-store`:
+2. In **File Manager**, rename `tebex-store` to `tebex-store-old`.
+3. Upload and extract the new <kbd>&lt;theme&gt;-store.tar.gz</kbd> into a fresh `tebex-store` folder, the same way as in [Uploading the files](hosting-panel-install.md).
+4. Copy from `tebex-store-old` into the new `tebex-store`:
    * the `.env` file
    * the whole `storage` folder
-   * the `theme/extras` folder, into `accent-store/theme`
+   * the `theme/extras` folder, into `tebex-store/theme`
 {% endstep %}
 
 {% step %}
@@ -60,7 +60,7 @@ The `.env` file holds your database password and Tebex keys. Keep it private.
 
 1. On the Node.js app page, press <mark style="color:$primary;">**Run NPM Install**</mark>, then <mark style="color:$primary;">**Start**</mark>, then <mark style="color:$primary;">**Restart**</mark>.
 2. Sign in at `https://store.example.com/admin/login`. Any database updates run on this first page, and a banner tells you how many ran.
-3. Open your store and check that everything works. Then delete `accent-store-old`.
+3. Open your store and check that everything works. Then delete `tebex-store-old`.
 {% endstep %}
 {% endstepper %}
 
@@ -72,7 +72,7 @@ The `.env` file holds your database password and Tebex keys. Keep it private.
 {% step %}
 ### Uploading the new release
 
-Upload the new <kbd>accent-store.zip</kbd> to <kbd>/var/www/</kbd> with your SFTP client.
+Upload the new <kbd>&lt;theme&gt;-store.zip</kbd> to <kbd>/var/www/</kbd> with your SFTP client.
 {% endstep %}
 
 {% step %}
@@ -80,22 +80,34 @@ Upload the new <kbd>accent-store.zip</kbd> to <kbd>/var/www/</kbd> with your SFT
 
 Log in to your server and run all of these commands:
 
+{% hint style="warning" %}
+**Change `<theme>` to the name of your theme** before you run these commands, it must match the file you uploaded.
+
+Example: if your file is called `mytheme-store.zip`, then this line:
+
+`unzip <theme>-store.zip -d tebex-store`
+
+becomes:
+
+`unzip mytheme-store.zip -d tebex-store`
+{% endhint %}
+
 ```bash
-mysqldump accent > /root/accent-backup-$(date +%F).sql
-systemctl stop accent-store
+mysqldump store > /root/store-backup-$(date +%F).sql
+systemctl stop tebex-store
 cd /var/www
-rm -rf accent-store-prev
-mv accent-store accent-store-prev
-unzip accent-store.zip -d accent-store
-rm accent-store.zip
-cp -a accent-store-prev/.env accent-store-prev/storage accent-store/
-if [ -d accent-store-prev/theme/extras ]; then cp -a accent-store-prev/theme/extras accent-store/theme/; fi
-cd accent-store
+rm -rf tebex-store-prev
+mv tebex-store tebex-store-prev
+unzip <theme>-store.zip -d tebex-store
+rm <theme>-store.zip
+cp -a tebex-store-prev/.env tebex-store-prev/storage tebex-store/
+if [ -d tebex-store-prev/theme/extras ]; then cp -a tebex-store-prev/theme/extras tebex-store/theme/; fi
+cd tebex-store
 npm ci --omit=dev
 node dist/cli.js migrate
-chown -R www-data:www-data /var/www/accent-store
-systemctl start accent-store
-systemctl status accent-store
+chown -R www-data:www-data /var/www/tebex-store
+systemctl start tebex-store
+systemctl status tebex-store
 ```
 
 The status must show **active (running)**. Press <mark style="color:$primary;">**q**</mark> to go back.
@@ -104,9 +116,9 @@ The status must show **active (running)**. Press <mark style="color:$primary;">*
 
 <summary>What do these commands do?</summary>
 
-1. Back up your database to <kbd>/root/accent-backup-DATE.sql</kbd>.
+1. Back up your database to <kbd>/root/store-backup-DATE.sql</kbd>.
 2. Stop the website.
-3. Move the current version to <kbd>/var/www/accent-store-prev</kbd> and unzip the new one.
+3. Move the current version to <kbd>/var/www/tebex-store-prev</kbd> and unzip the new one.
 4. Copy your `.env`, `storage` folder and add-ons into the new version.
 5. Install packages, update the database and start the website again.
 
@@ -119,7 +131,7 @@ The status must show **active (running)**. Press <mark style="color:$primary;">*
 Open your store and check that everything works.
 
 {% hint style="info" %}
-The previous version stays in <kbd>/var/www/accent-store-prev</kbd>, in case you need to go back.
+The previous version stays in <kbd>/var/www/tebex-store-prev</kbd>, in case you need to go back.
 {% endhint %}
 {% endstep %}
 {% endstepper %}

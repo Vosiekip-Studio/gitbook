@@ -16,6 +16,8 @@ Haven't checked your hosting yet? Read the [installation guide →](installation
 * `YOUR_SERVER_IP` → your server's IP address
 * `store.example.com` → your domain or subdomain
 * `CHANGE_THIS_PASSWORD` → a long password you make up for the database
+
+The files you download start with the name of your theme. On this page we write that as `<theme>`, so `<theme>-store.zip` is your own theme's file.
 {% endhint %}
 
 <details>
@@ -97,23 +99,23 @@ mysql
 Your terminal now shows `MariaDB [(none)]>`. Paste the lines below, after changing `CHANGE_THIS_PASSWORD` to your own password:
 
 ```sql
-CREATE DATABASE accent CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-CREATE USER 'accent'@'localhost' IDENTIFIED BY 'CHANGE_THIS_PASSWORD';
-GRANT ALL PRIVILEGES ON accent.* TO 'accent'@'localhost';
+CREATE DATABASE store CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE USER 'store'@'localhost' IDENTIFIED BY 'CHANGE_THIS_PASSWORD';
+GRANT ALL PRIVILEGES ON store.* TO 'store'@'localhost';
 FLUSH PRIVILEGES;
 EXIT;
 ```
 
-This creates a database called `accent` and a user called `accent` with your password. `EXIT;` brings you back to the normal terminal.
+This creates a database called `store` and a user called `store` with your password. `EXIT;` brings you back to the normal terminal.
 {% endstep %}
 
 {% step %}
 ### Uploading the website files
 
 1. Open your SFTP client and connect to `YOUR_SERVER_IP` as `root` (port `22`).
-2. Upload <kbd>accent-store.zip</kbd> to the folder <kbd>/var/www/</kbd>.
+2. Upload <kbd>&lt;theme&gt;-store.zip</kbd> to the folder <kbd>/var/www/</kbd>.
 
-<!-- Screenshot: FileZilla with accent-store.zip in /var/www -->
+<!-- Screenshot: FileZilla with the store zip in /var/www -->
 {% endstep %}
 
 {% step %}
@@ -121,20 +123,32 @@ This creates a database called `accent` and a user called `accent` with your pas
 
 Back in your terminal, run:
 
+{% hint style="warning" %}
+**Change `<theme>` to the name of your theme** before you run these commands, it must match the file you uploaded.
+
+Example: if your file is called `mytheme-store.zip`, then this line:
+
+`unzip <theme>-store.zip -d tebex-store`
+
+becomes:
+
+`unzip mytheme-store.zip -d tebex-store`
+{% endhint %}
+
 ```bash
 cd /var/www
-unzip accent-store.zip -d accent-store
-rm accent-store.zip
-cd accent-store
+unzip <theme>-store.zip -d tebex-store
+rm <theme>-store.zip
+cd tebex-store
 npm ci --omit=dev
-chown -R www-data:www-data /var/www/accent-store
+chown -R www-data:www-data /var/www/tebex-store
 ```
 
 <details>
 
 <summary>What do these commands do?</summary>
 
-* `unzip` extracts the files to <kbd>/var/www/accent-store</kbd>, then `rm` deletes the zip.
+* `unzip` extracts the files to <kbd>/var/www/tebex-store</kbd>, then `rm` deletes the zip.
 * `npm ci --omit=dev` installs the packages the website needs.
 * `chown` gives the web server user (`www-data`) ownership of the files, so the website can run safely without root.
 
@@ -149,21 +163,21 @@ A service keeps your website running in the background, and starts it again auto
 Open a new file in the text editor `nano`:
 
 ```bash
-nano /etc/systemd/system/accent-store.service
+nano /etc/systemd/system/tebex-store.service
 ```
 
 Paste this into the editor:
 
-{% code title="accent-store.service" %}
+{% code title="tebex-store.service" %}
 ```ini
 [Unit]
-Description=Accent Store
+Description=Tebex Store
 After=network.target mariadb.service
 
 [Service]
 User=www-data
 Group=www-data
-WorkingDirectory=/var/www/accent-store
+WorkingDirectory=/var/www/tebex-store
 Environment=NODE_ENV=production
 Environment=HOST=127.0.0.1
 Environment=PORT=3000
@@ -182,8 +196,8 @@ Now start the service:
 
 ```bash
 systemctl daemon-reload
-systemctl enable --now accent-store
-systemctl status accent-store
+systemctl enable --now tebex-store
+systemctl status tebex-store
 ```
 
 The status must show **active (running)** in green. Press <mark style="color:$primary;">**q**</mark> to go back.
@@ -201,12 +215,12 @@ nginx is the web server that sends visitors of your domain to the website.
 Open a new file:
 
 ```bash
-nano /etc/nginx/sites-available/accent-store
+nano /etc/nginx/sites-available/tebex-store
 ```
 
 Paste this, after changing `store.example.com` to your domain:
 
-{% code title="accent-store" %}
+{% code title="tebex-store" %}
 ```nginx
 server {
     listen 80;
@@ -230,7 +244,7 @@ server {
 Save and close: <mark style="color:$primary;">**Ctrl + O**</mark>, <mark style="color:$primary;">**Enter**</mark>, <mark style="color:$primary;">**Ctrl + X**</mark>. Then turn the site on:
 
 ```bash
-ln -s /etc/nginx/sites-available/accent-store /etc/nginx/sites-enabled/
+ln -s /etc/nginx/sites-available/tebex-store /etc/nginx/sites-enabled/
 rm -f /etc/nginx/sites-enabled/default
 nginx -t
 systemctl reload nginx
@@ -277,7 +291,7 @@ This only works once your domain points to the server (step 1). If certbot fails
 The setup wizard is protected with a one-time token, so nobody else can set up your store. Show it with:
 
 ```bash
-cat /var/www/accent-store/storage/setup-token.txt
+cat /var/www/tebex-store/storage/setup-token.txt
 ```
 
 Select the token it prints and copy it. Then open this address in your browser, with your token at the end:
@@ -303,8 +317,8 @@ Follow the wizard and fill in each screen as shown below.
 | ---------- | --------------------------- |
 | Host       | `127.0.0.1`                 |
 | Port       | `3306`                      |
-| Database   | `accent`                    |
-| User       | `accent`                    |
+| Database   | `store`                    |
+| User       | `store`                    |
 | Password   | your `CHANGE_THIS_PASSWORD` |
 | Public URL | `https://store.example.com` |
 

@@ -6,17 +6,17 @@ description: >-
 
 # Add-ons
 
-Add-ons add extra pages and features to your website. Each add-on is its own zip file, you only install the ones you want.
+Add-ons add extra pages and features to your website. Each add-on is its own zip file, you only install the ones you want. The file names start with the name of your theme, written here as `<theme>`.
 
 | Add-on                      | File                                                  |
 | --------------------------- | ----------------------------------------------------- |
-| Rank Table                  | `accent-store-rank-table-addon.zip`                   |
-| Patron Page                 | `accent-store-patron-page-addon.zip`                  |
-| Vote Page                   | `accent-store-vote-page-addon.zip`                    |
-| FAQ & Rules                 | `accent-store-faq-and-rules-addon.zip`                |
-| Key Upselling & Coin Slider | `accent-store-upselling-and-coin-slider-addon.zip`    |
-| Gift Cards                  | `accent-store-giftcards-addon.zip`                    |
-| Staff Team Page             | `accent-store-staff-team-page-addon.zip`              |
+| Rank Table                  | `<theme>-store-rank-table-addon.zip`                   |
+| Patron Page                 | `<theme>-store-patron-page-addon.zip`                  |
+| Vote Page                   | `<theme>-store-vote-page-addon.zip`                    |
+| FAQ & Rules                 | `<theme>-store-faq-and-rules-addon.zip`                |
+| Key Upselling & Coin Slider | `<theme>-store-upselling-and-coin-slider-addon.zip`    |
+| Gift Cards                  | `<theme>-store-giftcards-addon.zip`                    |
+| Staff Team Page             | `<theme>-store-staff-team-page-addon.zip`              |
 
 ***
 
@@ -28,10 +28,10 @@ Pick the tab that matches how you installed the website. The examples use the **
 
 {% tabs %}
 {% tab title="Hosting panel" %}
-1. In **File Manager**, open <kbd>accent-store/theme</kbd>. If there is no `extras` folder, create one.
+1. In **File Manager**, open <kbd>tebex-store/theme</kbd>. If there is no `extras` folder, create one.
 2. Open `extras` and upload the add-on zip there.
-3. Right-click the zip, press <mark style="color:$primary;">**Extract**</mark>, and extract it right there in <kbd>accent-store/theme/extras</kbd>.
-4. Delete the zip. You should now have a folder such as <kbd>accent-store/theme/extras/faq-and-rules</kbd>.
+3. Right-click the zip, press <mark style="color:$primary;">**Extract**</mark>, and extract it right there in <kbd>tebex-store/theme/extras</kbd>.
+4. Delete the zip. You should now have a folder such as <kbd>tebex-store/theme/extras/faq-and-rules</kbd>.
 5. Press <mark style="color:$primary;">**Restart**</mark> on the Node.js app page.
 
 {% hint style="info" %}
@@ -41,15 +41,27 @@ Unlike the website itself, the add-on zips contain no JavaScript, so the panel's
 
 {% tab title="VPS" %}
 1. Upload the add-on zip to <kbd>/var/www/</kbd> with your SFTP client.
-2. Run these commands (change the file name for other add-ons):
+2. Run these commands. For other add-ons, also change `faq-and-rules` to the add-on you are installing.
+
+{% hint style="warning" %}
+**Change `<theme>` to the name of your theme** before you run these commands, it must match the file you uploaded.
+
+Example: if your file is called `mytheme-store-faq-and-rules-addon.zip`, then this line:
+
+`unzip /var/www/<theme>-store-faq-and-rules-addon.zip -d extras`
+
+becomes:
+
+`unzip /var/www/mytheme-store-faq-and-rules-addon.zip -d extras`
+{% endhint %}
 
 ```bash
-cd /var/www/accent-store/theme
+cd /var/www/tebex-store/theme
 mkdir -p extras
-unzip /var/www/accent-store-faq-and-rules-addon.zip -d extras
-rm /var/www/accent-store-faq-and-rules-addon.zip
-chown -R www-data:www-data /var/www/accent-store/theme/extras
-systemctl restart accent-store
+unzip /var/www/<theme>-store-faq-and-rules-addon.zip -d extras
+rm /var/www/<theme>-store-faq-and-rules-addon.zip
+chown -R www-data:www-data /var/www/tebex-store/theme/extras
+systemctl restart tebex-store
 ```
 {% endtab %}
 {% endtabs %}
@@ -112,4 +124,4 @@ The title is case sensitive: `Vote` and `vote` are not the same.
 
 ### Removing an add-on
 
-Delete the add-on's folder from <kbd>theme/extras</kbd> and restart the website: press <mark style="color:$primary;">**Restart**</mark> on the Node.js app page, or run `systemctl restart accent-store` on a VPS.
+Delete the add-on's folder from <kbd>theme/extras</kbd> and restart the website: press <mark style="color:$primary;">**Restart**</mark> on the Node.js app page, or run `systemctl restart tebex-store` on a VPS.
