@@ -72,13 +72,20 @@ Your server's IP address is in the welcome email from your VPS provider, and in 
 <figure><img src="../.gitbook/assets/namecheap-advanced-dns-tab.png" alt=""><figcaption></figcaption></figure>
 
 4. Under **Host Records**, press <mark style="color:$primary;">**Add New Record**</mark> and choose **A Record**.
-5. Fill in:
+5. Fill in the three fields:
+   * **Host:** the part of the address in front of your domain. Look up your store address in the table below.
+   * **Value:** your IP address from the previous step, for example `123.45.67.89`.
+   * **TTL:** leave it on `Automatic`.
 
-| Field | What to fill in |
-| ----- | --------------- |
-| Host  | `@` for the domain itself (`mynetwork.com`), or the first part of your subdomain, e.g. `store` for `store.mynetwork.com` |
-| Value | your IP address from the previous step |
-| TTL   | `Automatic` |
+| If your store address is… | …type this in **Host** |
+| ------------------------- | ---------------------- |
+| `store.mynetwork.com`     | `store`                |
+| `shop.mynetwork.com`      | `shop`                 |
+| `mynetwork.com` (no subdomain) | `@`               |
+
+{% hint style="info" %}
+Need more than one subdomain, for example `store` and `demo`? Add one A record for each, with the same IP address in **Value**.
+{% endhint %}
 
 6. Press the green ✔ to save.
 
@@ -94,9 +101,12 @@ Your domain uses other nameservers. Open the **Domain** tab, set **Nameservers**
 
 <details>
 
-<summary>There is already an A record for @ or www</summary>
+<summary>There are already records for @ and www</summary>
 
-Namecheap adds a "parking page" record to new domains. If you use the domain itself (`@`) for your store, delete the existing `@` record and the `www` **CNAME Record** that points to `parkingpage.namecheap.com`, then add your own.
+New Namecheap domains come with two "parking page" records: a **URL Redirect Record** for `@` and a **CNAME Record** for `www` that points to `parkingpage.namecheap.com`.
+
+* Using a **subdomain** (like `store`)? Leave them, they don't get in the way.
+* Using the **domain itself** (`@`)? Delete both with the bin icon, then add your A record.
 
 </details>
 {% endstep %}
