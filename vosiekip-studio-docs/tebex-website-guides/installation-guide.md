@@ -102,7 +102,7 @@ Once your website is running, continue with these pages:
 * [Updating](updating.md): install a new release without losing your settings.
 * [Giving us access](giving-us-access.md): let our team help you safely with the installation.
 
-After that, you can set up your webstore in Tebex the way you normally would for a Tebex theme.
+Good to know: your theme settings, add-ons, sidebar modules and translations are managed in your website's own **admin panel**, not in Tebex anymore. Your **packages**, **pages**, **payments**, **billing** and **wallet** are still managed in the [Tebex Creator Panel](https://creator.tebex.io/).
 {% endstep %}
 {% endstepper %}
 

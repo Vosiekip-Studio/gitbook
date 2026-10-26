@@ -359,4 +359,21 @@ Webhooks let Tebex tell your website when someone buys something. **This step is
 
 ***
 
-🎉 **Your website is installed!** Continue with [setting up add-ons →](add-ons.md), then set up your webstore in Tebex the way you normally would for a Tebex theme.
+🎉 **Your website is installed!** Continue with [setting up add-ons →](add-ons.md).
+
+{% hint style="info" %}
+**Where do I manage what?**
+
+**Your website's admin panel** (`https://store.example.com/admin/login`):
+
+* **Settings:** store name, logo, favicon, Tebex integration and SEO.
+* **Theme:** store texts, footer, social media, sale, announcement, realm selector, colors and custom CSS.
+* **Add-ons:** set up your installed [add-ons](add-ons.md).
+* **Modules:** the panels in the store's sidebar, such as a payment goal or community goal.
+* **Content:** translations, images and uploads.
+* **System:** sync with Tebex, activity log and your account.
+
+**Tebex Creator Panel** ([creator.tebex.io](https://creator.tebex.io/)): packages and categories, pages, payments and billing, and your wallet, just like before.
+
+Changed something in Tebex? It shows on your website within a few minutes. To see it right away, press **System → Sync now** in the admin panel.
+{% endhint %}
