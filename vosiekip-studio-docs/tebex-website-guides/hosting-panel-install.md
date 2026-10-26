@@ -8,7 +8,7 @@ description: >-
 
 This guide is for hosting with a control panel: cPanel, Plesk, DirectAdmin, Webuzo or any other panel with a **Node.js app manager**. In the examples we use **cPanel**, which is what our recommended host [Verpex](https://clients.verpex.com/aff/fdcfe91af7b811b092fe0ec8fb04ff84dddc52a8) uses. Other panels have the same options under slightly different names.
 
-Haven't checked your hosting yet? Read the [installation guide →](installation-guide.md) first.
+Haven't checked your hosting yet? Read the [installation guide →](installation-guide.md) first. Your domain must also point to your hosting, see [Setting up your domain →](setting-up-your-domain.md).
 
 {% hint style="info" %}
 **Replace these everywhere on this page:**

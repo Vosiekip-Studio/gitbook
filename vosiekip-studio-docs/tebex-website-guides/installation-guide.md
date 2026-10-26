@@ -19,7 +19,7 @@ Before you start, read this page once from top to bottom. It tells you what you 
 Make sure you have the following ready before you begin.
 
 * **The website files** from your download: `<theme>-store.tar.gz` (hosting panel) or `<theme>-store.zip` (VPS). `<theme>` stands for the name of your theme.
-* **A domain or subdomain** for your store, for example `store.example.com`.
+* **A domain or subdomain** for your store, for example `store.example.com`. Don't have one yet? See [Setting up your domain](setting-up-your-domain.md).
 * **Your Tebex API keys**: the <mark style="color:$primary;">**Public token**</mark> and the <mark style="color:$primary;">**Private key**</mark>.
 
 <details>
