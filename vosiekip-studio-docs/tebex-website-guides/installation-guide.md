@@ -46,14 +46,14 @@ Your website needs **hosting**: a computer on the internet that keeps your store
 | --- | --- | --- |
 | **What it is** | You share a server and manage everything through a website with buttons, such as **cPanel**. | You rent a whole server and control it by typing commands. |
 | **Best for** | Beginners | People who are comfortable with a terminal |
-| **Examples** | [Verpex](https://verpex.com/), or any host with cPanel, Plesk, DirectAdmin or Webuzo and Node.js support | [Hetzner](https://www.hetzner.com/cloud), [DigitalOcean](https://www.digitalocean.com/), [OVHcloud](https://www.ovhcloud.com/), [Verpex VPS](https://verpex.com/) |
+| **Examples** | [Verpex](https://clients.verpex.com/aff/fdcfe91af7b811b092fe0ec8fb04ff84dddc52a8), or any host with cPanel, Plesk, DirectAdmin or Webuzo and Node.js support | [Hetzner](https://www.hetzner.com/cloud), [DigitalOcean](https://www.digitalocean.com/), [OVHcloud](https://www.ovhcloud.com/), [Verpex VPS](https://clients.verpex.com/aff/fdcfe91af7b811b092fe0ec8fb04ff84dddc52a8) |
 | **Setup** | Mostly clicking, no commands needed | Copy and paste commands |
 | **Guide** | [Hosting panel install](hosting-panel-install.md) | [VPS install](vps-install.md) |
 
 {% hint style="success" %}
 **Our recommendation: Verpex web hosting**
 
-New to hosting? We recommend [Verpex](https://verpex.com/) web hosting. It comes with **cPanel**, **Node.js support**, databases and free SSL, it is very cheap, and our [Hosting panel install](hosting-panel-install.md) guide follows it step by step. The cheapest plan is enough for one store.
+New to hosting? We recommend [Verpex](https://clients.verpex.com/aff/fdcfe91af7b811b092fe0ec8fb04ff84dddc52a8) web hosting. It comes with **cPanel**, **Node.js support**, databases and free SSL, it is very cheap, and our [Hosting panel install](hosting-panel-install.md) guide follows it step by step. The cheapest plan is enough for one store.
 {% endhint %}
 
 <details>
