@@ -6,7 +6,7 @@ description: >-
 
 # Hosting panel install
 
-This guide is for hosting with a control panel: cPanel, Plesk, DirectAdmin, Webuzo or any other panel with a **Node.js app manager**. In the examples we use **cPanel**, which is what our recommended host [Verpex](https://verpex.com/) uses. Other panels have the same options under slightly different names.
+This guide is for hosting with a control panel: cPanel, Plesk, DirectAdmin, Webuzo or any other panel with a **Node.js app manager**. In the examples we use **cPanel**, which is what our recommended host [Verpex](https://clients.verpex.com/aff/fdcfe91af7b811b092fe0ec8fb04ff84dddc52a8) uses. Other panels have the same options under slightly different names.
 
 Haven't checked your hosting yet? Read the [installation guide →](installation-guide.md) first.
 
