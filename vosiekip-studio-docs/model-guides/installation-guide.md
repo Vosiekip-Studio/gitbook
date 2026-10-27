@@ -28,7 +28,7 @@ Not sure which plugin you have? Look in your server's `plugins` folder. You will
 ### Unzip the download
 
 1. Unzip the downloaded model file on your computer. On Windows: right-click → **Extract All**. On macOS: double-click the file.
-2. Open the `0. Configs` folder. Inside you'll find a folder for each plugin: `Itemsadder`, `Nexo` and `Oraxen`.
+2. Open the `0. Configs` folder. Inside you'll find a folder for each plugin: `ItemsAdder`, `Nexo` and `Oraxen`.
 3. Open the folder for the plugin **you** use. The other folders you can ignore.
 {% endstep %}
 
