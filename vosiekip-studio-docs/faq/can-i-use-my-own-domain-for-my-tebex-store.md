@@ -39,4 +39,6 @@ A Tebex website runs on your own hosting and your own domain. Your packages, pay
 
 ### Our Tebex websites
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Browse our Tebex websites</strong></td><td>A complete store website on your own domain.</td><td><a href="https://builtbybit.com/store/vosiekip-studio.25/">https://builtbybit.com/store/vosiekip-studio.25/</a></td></tr></tbody></table>
+{% hint style="info" %}
+**Coming soon:** Tebex websites for all our theme designs. Join our [Discord](https://discord.gg/PxwaKxKhb6) to hear first when they launch.
+{% endhint %}
