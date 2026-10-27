@@ -27,6 +27,7 @@ Each product has its own documentation for setup and a general documentation for
 * [Tebex theme installation →](tebex-theme-guides/installation-guide.md)
 * [Tebex website installation →](tebex-website-guides/installation-guide.md)
 * [PayNow theme installation →](paynow-guides/installation-guide.md)
+* [Minecraft model installation →](model-guides/installation-guide.md)
 {% endstep %}
 {% endstepper %}
 

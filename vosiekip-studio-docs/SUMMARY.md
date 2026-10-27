@@ -25,3 +25,10 @@
 * [Add-ons](tebex-website-guides/add-ons.md)
 * [Updating](tebex-website-guides/updating.md)
 * [Giving us access](tebex-website-guides/giving-us-access.md)
+
+## Model guides
+
+* [Installation guide](model-guides/installation-guide.md)
+  * [ItemsAdder](model-guides/itemsadder.md)
+  * [Nexo](model-guides/nexo.md)
+  * [Oraxen](model-guides/oraxen.md)
