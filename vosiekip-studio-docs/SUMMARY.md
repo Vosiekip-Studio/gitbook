@@ -32,3 +32,9 @@
   * [ItemsAdder](model-guides/itemsadder.md)
   * [Nexo](model-guides/nexo.md)
   * [Oraxen](model-guides/oraxen.md)
+
+## Build guides
+
+* [Installation guide](build-guides/installation-guide.md)
+  * [Pasting with FAWE](build-guides/pasting-with-fawe.md)
+  * [Uploading the world folder](build-guides/uploading-the-world-folder.md)
