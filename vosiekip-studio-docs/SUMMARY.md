@@ -3,7 +3,6 @@
 * [Welcome](README.md)
 * [Getting started](getting-started.md)
 * [Term of Service](term-of-service.md)
-* [How to purchase](how-to-purchase.md)
 * [How to download](how-to-download.md)
 
 ## Tebex theme guides
