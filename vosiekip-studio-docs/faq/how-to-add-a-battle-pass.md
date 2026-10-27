@@ -29,4 +29,4 @@ More info: [BattlePass docs](https://battlepass.advancedplugins.net).
 
 99+ tiers, 180+ quests and a premium pass, for survival, lifesteal and SMP servers.
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Battlepass - Configuration</strong></td><td>99+ tiers, 180+ quests and a premium pass.</td><td><a href="https://builtbybit.com/resources/battlepass-configuration.39969/">https://builtbybit.com/resources/battlepass-configuration.39969/</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><strong>Battlepass - Configuration</strong></td><td>99+ tiers, 180+ quests and a premium pass.</td><td><a href="https://builtbybit.com/resources/battlepass-configuration.39969/">https://builtbybit.com/resources/battlepass-configuration.39969/</a></td><td><a href="../.gitbook/assets/product-battlepass-configuration.jpg">product-battlepass-configuration.jpg</a></td></tr></tbody></table>

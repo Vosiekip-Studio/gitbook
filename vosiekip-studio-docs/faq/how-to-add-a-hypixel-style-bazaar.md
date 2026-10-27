@@ -30,4 +30,4 @@ description: >-
 
 A Hypixel-style bazaar with 10+ categories and balanced survival items.
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>DeluxeBazaar - Configuration</strong></td><td>Hypixel-style bazaar with 10+ categories and balanced survival items.</td><td><a href="https://builtbybit.com/resources/deluxebazaar-configuration.79266/">https://builtbybit.com/resources/deluxebazaar-configuration.79266/</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><strong>DeluxeBazaar - Configuration</strong></td><td>Hypixel-style bazaar with 10+ categories and balanced survival items.</td><td><a href="https://builtbybit.com/resources/deluxebazaar-configuration.79266/">https://builtbybit.com/resources/deluxebazaar-configuration.79266/</a></td><td><a href="../.gitbook/assets/product-deluxebazaar-configuration.jpg">product-deluxebazaar-configuration.jpg</a></td></tr></tbody></table>

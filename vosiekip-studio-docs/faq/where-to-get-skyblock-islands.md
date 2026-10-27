@@ -27,4 +27,4 @@ Starting a whole skyblock server? See [How do I start a Hypixel-style skyblock s
 
 ### Our skyblock islands
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Skyblock - Farming Islands</strong></td><td>A large skyblock farming island with all vanilla crops.</td><td><a href="https://builtbybit.com/resources/skyblock-farming-islands.116051/">https://builtbybit.com/resources/skyblock-farming-islands.116051/</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><strong>Skyblock - Farming Islands</strong></td><td>A large skyblock farming island with all vanilla crops.</td><td><a href="https://builtbybit.com/resources/skyblock-farming-islands.116051/">https://builtbybit.com/resources/skyblock-farming-islands.116051/</a></td><td><a href="../.gitbook/assets/product-skyblock-farming-islands.jpg">product-skyblock-farming-islands.jpg</a></td></tr></tbody></table>
