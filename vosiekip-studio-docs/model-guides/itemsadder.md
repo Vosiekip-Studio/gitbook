@@ -16,7 +16,7 @@ Make sure [ItemsAdder](https://www.spigotmc.org/resources/73355/) is installed a
 
 1. Unzip the model download on your computer.
 2. Open the `ItemsAdder` folder inside it.
-3. Inside you'll find one folder with the name of the model pack, for example `vosiekip_crates`. This is the folder we upload.
+3. Inside you'll find one folder with the name of the model pack. On this page we write that name as `<model-pack>`. This is the folder we upload.
 
 {% hint style="warning" %}
 Upload the pack folder itself, not the files inside it. ItemsAdder needs the folder to know which pack the files belong to.
@@ -30,7 +30,7 @@ Upload the pack folder itself, not the files inside it. ItemsAdder needs the fol
 2. Go to <kbd>plugins/ItemsAdder/contents</kbd>.
 3. Upload the pack folder there.
 
-You should now have a folder such as <kbd>plugins/ItemsAdder/contents/vosiekip_crates</kbd>, with folders like `configs`, `textures` and `models` inside.
+You should now have a folder such as <kbd>plugins/ItemsAdder/contents/&lt;model-pack&gt;</kbd>, with folders like `configs`, `textures` and `models` inside.
 
 <!-- Screenshot: plugins/ItemsAdder/contents with the pack folder -->
 
@@ -73,7 +73,7 @@ You can also give an item with:
 /iaget <namespace>:<item>
 ```
 
-For example `/iaget vosiekip_crates:common_key`. The item names are listed in the menu.
+For example `/iaget <model-pack>:common_key`, with `<model-pack>` changed to the name of your pack folder. The item names are listed in the menu.
 {% endstep %}
 {% endstepper %}
 
