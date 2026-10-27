@@ -6,7 +6,7 @@ description: >-
 
 # How do I add quests to my server?
 
-**Short answer:** install a quest plugin and add quests in **categories**, such as mining, farming and combat. Give rewards that feel worth it, and add enough quests that players never run out.
+**Short answer:** install a quest plugin, such as the free [Quests](https://www.spigotmc.org/resources/quests-1-8-1-21-set-up-goals-for-players.23696/) plugin, and add quests in **categories**, such as mining, farming and combat. Give rewards that feel worth it, and add enough quests that players never run out.
 
 ***
 
@@ -26,6 +26,6 @@ Writing thousands of balanced quests by hand takes weeks. A ready-made configura
 
 ### Our quest configuration
 
-3,000+ quests in 21 categories, for survival, lifesteal and SMP servers.
+3,000+ quests in 21 categories for the **Quests** plugin, for survival, lifesteal and SMP servers.
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Mega Quest - Configuration</strong></td><td>3,000+ quests in 21 categories for survival, lifesteal and SMP servers.</td><td><a href="https://builtbybit.com/resources/mega-quest-configuration.88556/">https://builtbybit.com/resources/mega-quest-configuration.88556/</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Mega Quest - Configuration</strong></td><td>3,000+ quests in 21 categories for the Quests plugin.</td><td><a href="https://builtbybit.com/resources/mega-quest-configuration.88556/">https://builtbybit.com/resources/mega-quest-configuration.88556/</a></td></tr></tbody></table>
