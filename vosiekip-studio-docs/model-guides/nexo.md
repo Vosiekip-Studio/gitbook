@@ -15,7 +15,7 @@ Make sure [Nexo](https://docs.nexomc.com/) is installed and has started at least
 ### Finding the Nexo folder
 
 1. Unzip the model download on your computer.
-2. Open the `Nexo` folder inside it.
+2. Open <kbd>0. Configs/Nexo</kbd>.
 3. Inside you'll find an `items` folder and a `pack` folder. Some packs also have a `glyphs` folder.
 {% endstep %}
 
@@ -69,7 +69,7 @@ You can also give an item with:
 /nexo give <item> [amount] [player]
 ```
 
-For example `/nexo give common_key 1 Steve`. The item names are listed in the menu.
+For example, the tombstone from our Halloween pack: `/nexo give halloween_tombstone 1 Steve`. The item names are listed in the menu.
 {% endstep %}
 {% endstepper %}
 

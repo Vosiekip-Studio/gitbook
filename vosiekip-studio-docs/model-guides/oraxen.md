@@ -15,7 +15,7 @@ Make sure [Oraxen](https://docs.oraxen.com/) is installed and has started at lea
 ### Finding the Oraxen folder
 
 1. Unzip the model download on your computer.
-2. Open the `Oraxen` folder inside it.
+2. Open <kbd>0. Configs/Oraxen</kbd>.
 3. Inside you'll find an `items` folder and a `pack` folder.
 {% endstep %}
 
@@ -68,7 +68,7 @@ You can also give an item with:
 /oraxen give <player> <item> [amount]
 ```
 
-For example `/oraxen give Steve common_key 1`. The item names are listed in the menu.
+For example, the tombstone from our Halloween pack: `/oraxen give Steve halloween_tombstone 1`. The item names are listed in the menu.
 {% endstep %}
 {% endstepper %}
 

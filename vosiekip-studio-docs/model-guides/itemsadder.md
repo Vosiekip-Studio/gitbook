@@ -15,11 +15,11 @@ Make sure [ItemsAdder](https://www.spigotmc.org/resources/73355/) is installed a
 ### Finding the ItemsAdder folder
 
 1. Unzip the model download on your computer.
-2. Open the `ItemsAdder` folder inside it.
-3. Inside you'll find one folder with the name of the model pack. On this page we write that name as `<model-pack>`. This is the folder we upload.
+2. Open <kbd>0. Configs/Itemsadder/Contents</kbd>.
+3. Inside you'll find one folder with the name of the model pack, for example `halloweenpack`. On this page we write that name as `<model-pack>`. This is the folder we upload.
 
 {% hint style="warning" %}
-Upload the pack folder itself, not the files inside it. ItemsAdder needs the folder to know which pack the files belong to.
+Upload the `<model-pack>` folder itself: not the files inside it, and not the `Contents` folder around it. ItemsAdder needs the pack folder to know which pack the files belong to.
 {% endhint %}
 {% endstep %}
 
@@ -30,7 +30,7 @@ Upload the pack folder itself, not the files inside it. ItemsAdder needs the fol
 2. Go to <kbd>plugins/ItemsAdder/contents</kbd>.
 3. Upload the pack folder there.
 
-You should now have a folder such as <kbd>plugins/ItemsAdder/contents/&lt;model-pack&gt;</kbd>, with folders like `configs`, `textures` and `models` inside.
+You should now have a folder such as <kbd>plugins/ItemsAdder/contents/&lt;model-pack&gt;</kbd>, with the folders `items_packs` and `resource_pack` inside.
 
 <!-- Screenshot: plugins/ItemsAdder/contents with the pack folder -->
 
@@ -73,7 +73,7 @@ You can also give an item with:
 /iaget <model-pack>:<item>
 ```
 
-For example `/iaget <model-pack>:common_key`, with `<model-pack>` changed to the name of your pack folder. The item names are listed in the menu.
+Change `<model-pack>` to the name of your pack folder. For example, the tombstone from our Halloween pack is `/iaget halloweenpack:halloweenpack_1`. The item names are listed in the menu.
 {% endstep %}
 {% endstepper %}
 
