@@ -70,7 +70,7 @@ ItemsAdder builds a new resource pack with the models in it. Wait until it says 
 You can also give an item with:
 
 ```
-/iaget <namespace>:<item>
+/iaget <model-pack>:<item>
 ```
 
 For example `/iaget <model-pack>:common_key`, with `<model-pack>` changed to the name of your pack folder. The item names are listed in the menu.
