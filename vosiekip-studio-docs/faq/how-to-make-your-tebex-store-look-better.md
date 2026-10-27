@@ -1,7 +1,7 @@
 ---
 description: >-
-  Three ways to make your Tebex store look better: tweak the default template,
-  install a premium Tebex theme, or run your own Tebex website.
+  Three ways to make your Tebex store look better: tweak the default look, run
+  your own Tebex website, or install a theme on an older store.
 ---
 
 # How do I make my Tebex store look better?

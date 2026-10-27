@@ -1,0 +1,28 @@
+---
+description: >-
+  How to make your Minecraft server look professional to new players: the
+  spawn, menus, store and branding that make a strong first impression.
+---
+
+# How do I make my server look professional to new players?
+
+**Short answer:** focus on what new players see first: a **detailed spawn**, **clean menus**, a **store that matches your server**, and the same colors and logo everywhere.
+
+***
+
+### First impressions, in order
+
+1. **The spawn.** It's the first thing players see when they join. A detailed, themed spawn shows effort right away. See [How big should a spawn be?](how-big-should-a-minecraft-spawn-be.md)
+2. **Menus.** Default chat commands feel old. Clean menus for skills, quests and shops feel modern, see [What is DeluxeMenus?](what-is-deluxemenus.md)
+3. **The store.** Players visit it from your Discord or `/buy`. A default store looks unfinished, see [Make your store look better](how-to-make-your-tebex-store-look-better.md).
+4. **Branding.** Use the same logo, colors and font on your spawn, store, Discord and server list banner.
+
+{% hint style="info" %}
+Small details count: a working `/help`, a short welcome message and clear rules make players stay.
+{% endhint %}
+
+***
+
+### Our builds, configs and themes
+
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Spawn - Holiday Lifesteal</strong></td><td>501×501 lifesteal spawn with a themed arena, crates and a circle spawn point.</td><td><a href="https://builtbybit.com/resources/spawn-holiday-lifesteal.115529/">https://builtbybit.com/resources/spawn-holiday-lifesteal.115529/</a></td></tr><tr><td><strong>Spawn - Oriental Lifesteal</strong></td><td>501×501 lifesteal spawn with an oriental theme, crates and a circle spawn point.</td><td><a href="https://builtbybit.com/resources/spawn-oriental-lifesteal.115530/">https://builtbybit.com/resources/spawn-oriental-lifesteal.115530/</a></td></tr><tr><td><strong>Spawn - Dinosaur Lifesteal</strong></td><td>501×501 lifesteal spawn with a dinosaur arena, crates and a circle spawn point.</td><td><a href="https://builtbybit.com/resources/spawn-dinosaur-lifesteal.113396/">https://builtbybit.com/resources/spawn-dinosaur-lifesteal.113396/</a></td></tr><tr><td><strong>Spawn - Multibiome Lifesteal</strong></td><td>501×501 lifesteal spawn with a multibiome arena, crates and a circle spawn point.</td><td><a href="https://builtbybit.com/resources/spawn-multibiome-lifesteal.110069/">https://builtbybit.com/resources/spawn-multibiome-lifesteal.110069/</a></td></tr><tr><td><strong>McMMO - Configuration</strong></td><td>mcMMO + DeluxeMenus: 15 skills, 50+ menus, milestones and skill trees.</td><td><a href="https://builtbybit.com/resources/mcmmo-configuration.41931/">https://builtbybit.com/resources/mcmmo-configuration.41931/</a></td></tr><tr><td><strong>Legend | PayNow Theme</strong></td><td>Modern, easy to edit PayNow theme for Minecraft, Rust and Hytale webstores.</td><td><a href="https://builtbybit.com/resources/legend-paynow-theme.102388/">https://builtbybit.com/resources/legend-paynow-theme.102388/</a></td></tr><tr><td><strong>Glow | PayNow Theme</strong></td><td>Modern, easy to edit PayNow theme for Minecraft, Rust and Hytale webstores.</td><td><a href="https://builtbybit.com/resources/glow-paynow-theme.102390/">https://builtbybit.com/resources/glow-paynow-theme.102390/</a></td></tr><tr><td><strong>Cube | PayNow Template</strong></td><td>Modern, easy to edit PayNow theme for Minecraft, Rust and Garry's Mod webstores.</td><td><a href="https://builtbybit.com/resources/cube-paynow-template.49120/">https://builtbybit.com/resources/cube-paynow-template.49120/</a></td></tr><tr><td><strong>Allay | PayNow Theme</strong></td><td>Modern, easy to edit PayNow theme for Minecraft, Rust and Garry's Mod webstores.</td><td><a href="https://builtbybit.com/resources/allay-paynow-theme.49088/">https://builtbybit.com/resources/allay-paynow-theme.49088/</a></td></tr><tr><td><strong>Accent | PayNow Theme</strong></td><td>Modern, easy to edit PayNow theme for Minecraft, Rust and Hytale webstores.</td><td><a href="https://builtbybit.com/resources/accent-paynow-theme.121745/">https://builtbybit.com/resources/accent-paynow-theme.121745/</a></td></tr><tr><td><strong>Hyte | PayNow Theme</strong></td><td>Modern, easy to edit PayNow theme for Minecraft, Rust and Hytale webstores.</td><td><a href="https://builtbybit.com/resources/hyte-paynow-theme.102389/">https://builtbybit.com/resources/hyte-paynow-theme.102389/</a></td></tr></tbody></table>
