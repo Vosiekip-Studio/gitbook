@@ -42,13 +42,13 @@ Never share your **Private key** with anyone. It gives full access to your Tebex
 
 Your website needs **hosting**: a computer on the internet that keeps your store online 24/7. The website runs on **Node.js**, so your hosting must support Node.js. Both kinds of hosting below work.
 
-| Hosting | Web hosting <mark style="color:$success;">**(Recommended)**</mark> | VPS |
-| --- | --- | --- |
-| **What it is** | You share a server and manage everything through a website with buttons, such as **cPanel**. | You rent a whole server and control it by typing commands. |
-| **Best for** | Beginners | People who are comfortable with a terminal |
-| **Examples** | [Verpex](https://clients.verpex.com/aff/fdcfe91af7b811b092fe0ec8fb04ff84dddc52a8), or any host with cPanel, Plesk, DirectAdmin or Webuzo and Node.js support | [Hetzner](https://www.hetzner.com/cloud), [DigitalOcean](https://www.digitalocean.com/), [OVHcloud](https://www.ovhcloud.com/), [Verpex VPS](https://clients.verpex.com/aff/fdcfe91af7b811b092fe0ec8fb04ff84dddc52a8) |
-| **Setup** | Mostly clicking, no commands needed | Copy and paste commands |
-| **Guide** | [Hosting panel install](hosting-panel-install.md) | [VPS install](vps-install.md) |
+| Hosting        | Web hosting <mark style="color:$success;">**(Recommended)**</mark>                                                                                           | VPS                                                                                                                                                                                                                   |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **What it is** | You share a server and manage everything through a website with buttons, such as **cPanel**.                                                                 | You rent a whole server and control it by typing commands.                                                                                                                                                            |
+| **Best for**   | Beginners                                                                                                                                                    | People who are comfortable with a terminal                                                                                                                                                                            |
+| **Examples**   | [Verpex](https://clients.verpex.com/aff/fdcfe91af7b811b092fe0ec8fb04ff84dddc52a8), or any host with cPanel, Plesk, DirectAdmin or Webuzo and Node.js support | [Hetzner](https://www.hetzner.com/cloud), [DigitalOcean](https://www.digitalocean.com/), [OVHcloud](https://www.ovhcloud.com/), [Verpex VPS](https://clients.verpex.com/aff/fdcfe91af7b811b092fe0ec8fb04ff84dddc52a8) |
+| **Setup**      | Mostly clicking, no commands needed                                                                                                                          | Copy and paste commands                                                                                                                                                                                               |
+| **Guide**      | [Hosting panel install](hosting-panel-install.md)                                                                                                            | [VPS install](vps-install.md)                                                                                                                                                                                         |
 
 {% hint style="success" %}
 **Our recommendation: Verpex web hosting**
@@ -81,7 +81,7 @@ A "PHP only" webhost, the kind that only runs WordPress, cannot run the website.
 
 Choose the guide that matches the hosting you picked.
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Hosting panel install</strong> (recommended)</td><td>For web hosting with a control panel, such as Verpex with cPanel. No commands needed for most steps.</td><td><a href="hosting-panel-install.md">hosting-panel-install.md</a></td></tr><tr><td><strong>VPS install</strong></td><td>For your own Ubuntu 22.04 or 24.04 server with root access. You will copy and paste a few commands.</td><td><a href="vps-install.md">vps-install.md</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><strong>Hosting panel install</strong> (recommended)</td><td>For web hosting with a control panel, such as Verpex with cPanel. No commands needed for most steps.</td><td><a href="hosting-panel-install.md">hosting-panel-install.md</a></td><td><a href="../.gitbook/assets/Tebex2.jpg">Tebex2.jpg</a></td></tr><tr><td><strong>VPS install</strong></td><td>For your own Ubuntu 22.04 or 24.04 server with root access. You will copy and paste a few commands.</td><td><a href="vps-install.md">vps-install.md</a></td><td><a href="../.gitbook/assets/Tebex3.jpg">Tebex3.jpg</a></td></tr></tbody></table>
 
 <details>
 

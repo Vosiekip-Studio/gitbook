@@ -31,11 +31,11 @@ Before we can start we need to create your first [Paynow Store](https://dashboar
 {% step %}
 ### Creating a Paynow template
 
-To upload a new template you need to navigate to the appearance template creation page, which can be [found here](https://dashboard.paynow.gg/webstore/templates/create).&#x20;
+To upload a new template you need to navigate to the appearance template creation page, which can be [found here](https://dashboard.paynow.gg/webstore/templates/create).
 
 ***
 
-1. For support reasons we request your template name to follow a naming structure.&#x20;
+1. For support reasons we request your template name to follow a naming structure.
 
 {% code fullWidth="true" %}
 ```
@@ -87,7 +87,7 @@ The staff team page is a new html asset, essentially the same process as uploadi
 
 #### Staff team setup
 
-* Create a Custom page entry in your template settings.&#x20;
+* Create a Custom page entry in your template settings.
 * Go to the Staff Team Page (Addon) in template settings.
 * Enter your page Tile (Case sensitive) in "Staff page title" setting.
 
@@ -116,7 +116,7 @@ The vote page is a new html asset, essentially the same process as uploading the
 
 #### Vote setup
 
-* Create a Custom page entry in your template settings.&#x20;
+* Create a Custom page entry in your template settings.
 * Go to the Vote Page (Addon) in template settings.
 * Enter your page Tile (Case sensitive) in "Vote page title" setting.
 
@@ -145,7 +145,7 @@ The Patron page is a new html asset, essentially the same process as uploading t
 
 #### Patron setup
 
-* Create a Custom page entry in your template settings.&#x20;
+* Create a Custom page entry in your template settings.
 * Go to the Patron Page (Addon) in template settings.
 * Enter your page Tile (Case sensitive) in "Patron page title" setting.
 
@@ -166,7 +166,7 @@ The Patron page is a new html asset, essentially the same process as uploading t
 {% tab title="Faq & Rules" %}
 The Faq & rules is a new html asset, essentially the same process as uploading the rest of the template files.
 
-* Directory of the Faq-page <kbd>/0. Theme/assets/faq-page.html</kbd>&#x20;
+* Directory of the Faq-page <kbd>/0. Theme/assets/faq-page.html</kbd>
 * Directory of the Rules-page <kbd>/0. Theme/assets/rules-page.html</kbd>
 
 ***
@@ -177,7 +177,7 @@ The Faq & rules is a new html asset, essentially the same process as uploading t
 
 #### Rules & Faq setup
 
-* Create a Custom page entry in your template settings.&#x20;
+* Create a Custom page entry in your template settings.
 * Go to the Faq & Rules Page (Addon) in template settings.
 * Enter your page Tile (Case sensitive) in "Faq or Rules page title" setting.
 
@@ -226,7 +226,7 @@ The staff team page is a new html asset, essentially the same process as uploadi
 {% tab title="Upsell & Coin slider" %}
 The upsell & coin slider is a new html asset, essentially the same process as uploading the rest of the template files.
 
-* Directory of the Upsell <kbd>/0. Theme/assets/upsell.html</kbd>&#x20;
+* Directory of the Upsell <kbd>/0. Theme/assets/upsell.html</kbd>
 * Directory of the Coin slider <kbd>/0. Theme/assets/coin-slider.html</kbd>
 
 ***
@@ -242,7 +242,7 @@ The upsell & coin slider is a new html asset, essentially the same process as up
 * Enter your <mark style="color:$primary;">parent package ID</mark> in "Crate 1 - Parent Package ID" setting.
 * Enter the Crate 1 - Upsell Package IDs in order separated by "," Example: <mark style="color:$primary;">**470603945287360512**</mark>,<mark style="color:$warning;">00000000000000000</mark>,<mark style="color:blue;">00000000000000000</mark>,<mark style="color:pink;">00000000000000000</mark>
 
-<figure><img src="../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -251,10 +251,10 @@ The upsell & coin slider is a new html asset, essentially the same process as up
 Coin sliders works essentialy the same as the key upselling only diffrence are the display name and stage labels.
 
 * Display name is the name of your coin Example: "Gems"
-* Stage labels, are the Gem amounts.&#x20;
+* Stage labels, are the Gem amounts.
 
 {% hint style="info" %}
-**Why stage labels and titles?** \
+**Why stage labels and titles?**\
 \
 We are not fetching the package names as these often include the amount and the title making the names to long for the coin slider tiers.
 {% endhint %}
