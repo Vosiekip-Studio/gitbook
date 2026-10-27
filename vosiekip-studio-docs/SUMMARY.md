@@ -37,3 +37,11 @@
 * [Installation guide](build-guides/installation-guide.md)
   * [Pasting with FAWE](build-guides/pasting-with-fawe.md)
   * [Uploading the world folder](build-guides/uploading-the-world-folder.md)
+
+## FAQ
+
+* [Frequently asked questions](faq/frequently-asked-questions.md)
+  * [How do I make my Tebex store look better?](faq/how-to-make-your-tebex-store-look-better.md)
+  * [Can I use my own domain for my Tebex store?](faq/can-i-use-my-own-domain-for-my-tebex-store.md)
+  * [ItemsAdder, Nexo or Oraxen?](faq/itemsadder-vs-nexo-vs-oraxen.md)
+  * [How big should a Minecraft spawn be?](faq/how-big-should-a-minecraft-spawn-be.md)
