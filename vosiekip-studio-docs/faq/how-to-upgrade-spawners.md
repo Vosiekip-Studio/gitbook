@@ -26,4 +26,4 @@ Spawner farms make a lot of money and items. Balance upgrade costs and drop pric
 
 A full menu makeover and spawners for all mobs.
 
-<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>AxSpawners - Configuration</strong></td><td>A full menu makeover and spawners for all mobs.</td><td><a href="https://builtbybit.com/resources/axspawners-configuration.109621/">https://builtbybit.com/resources/axspawners-configuration.109621/</a></td></tr></tbody></table>
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-target data-type="content-ref"></th><th data-hidden data-card-cover data-type="image">Cover image</th></tr></thead><tbody><tr><td><strong>AxSpawners - Configuration</strong></td><td>A full menu makeover and spawners for all mobs.</td><td><a href="https://builtbybit.com/resources/axspawners-configuration.109621/">https://builtbybit.com/resources/axspawners-configuration.109621/</a></td><td><a href="../.gitbook/assets/product-axspawners-configuration.jpg">product-axspawners-configuration.jpg</a></td></tr></tbody></table>
