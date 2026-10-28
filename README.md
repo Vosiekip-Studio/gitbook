@@ -1,0 +1,11 @@
+---
+description: This is the official documentation page for all Vosiekip Studio products.
+---
+
+# Welcome
+
+Welcome to the Vosiekip studio documentation. If you're new, start with our [quick start guide →](getting-started.md) or explore one of our guides below. If you need assistance during the installation process, don’t hesitate to [reach out](https://discord.gg/PxwaKxKhb6) - we’re here to help.
+
+***
+
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="image">Cover image</th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>How to download</strong></td><td>Learn how to download purchased goods.</td><td><a href=".gitbook/assets/Tutorial-002.jpg">Tutorial-002.jpg</a></td><td><a href="how-to-download.md">how-to-download.md</a></td></tr><tr><td><strong>Tebex theme setup</strong></td><td>Learn to create, setup and install Tebex themes.</td><td><a href=".gitbook/assets/Tebex1.jpg">Tebex1.jpg</a></td><td><a href="tebex-theme-guides/installation-guide.md">installation-guide.md</a></td></tr><tr><td><strong>Tebex website setup</strong></td><td>Learn to install and set up your own Tebex website.</td><td><a href=".gitbook/assets/Tebex.jpg">Tebex.jpg</a></td><td><a href="tebex-website-guides/installation-guide.md">installation-guide.md</a></td></tr><tr><td>Paynow theme setup</td><td>Learn to create, setup and install Paynow themes.</td><td><a href=".gitbook/assets/Legend-banner- paynow.jpg">Legend-banner- paynow.jpg</a></td><td><a href="paynow-guides/installation-guide.md">installation-guide.md</a></td></tr><tr><td><strong>Minecraft models setup</strong></td><td>Learn to install our models with ItemsAdder, Nexo or Oraxen.</td><td><a href=".gitbook/assets/Minecraft-models-banner.jpg">Minecraft-models-banner.jpg</a></td><td><a href="model-guides/installation-guide.md">installation-guide.md</a></td></tr><tr><td><strong>Minecraft builds setup</strong></td><td>Learn to install our builds with FAWE or as a world folder.</td><td><a href=".gitbook/assets/Minecraft-build-banner.jpg">Minecraft-build-banner.jpg</a></td><td><a href="build-guides/installation-guide.md">installation-guide.md</a></td></tr></tbody></table>
